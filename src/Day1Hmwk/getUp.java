@@ -12,10 +12,21 @@ public class getUp {
 	}
 	
 	
+	public static String parrotMethod(boolean isSquawking, int currentHour) {		
+			if(isSquawking == true && (currentHour < 600 | currentHour > 2200)) {
+			return "True";
+		} else {
+			return "False";
+		}
+		}
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub		
-		System.out.println(currentHour(500));
+		System.out.println(currentHour(400));
+		System.out.println(parrotMethod(true, 500));
+		System.out.println(parrotMethod(false, 500));
 		
 	}
 
